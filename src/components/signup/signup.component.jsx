@@ -45,12 +45,15 @@ class SignUp extends React.Component{
         }catch(error){
             console.err(error)
         }
+        console.log()
     }
 
     handleChange = event => {
         const{name, value} = event.target
 
         this.setState({ [name]: value })
+
+        console.log()
     }
     
     render(){
